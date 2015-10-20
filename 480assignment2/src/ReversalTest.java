@@ -7,18 +7,9 @@ import org.junit.Test;
 
 public class ReversalTest {
 
-//	@Test
-//	public void test() {
-//		fail("Not yet implemented");
-//	}
 	@Test
 	public void testreverseFile()
 	{
-	//File input;
-	//File output;
-	//case that check for exception with no file
-	
-	//case that checks for moving punctuation
 	try
 	{
 		File input = new File("file");
