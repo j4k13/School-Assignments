@@ -99,5 +99,29 @@ public class ReversalTest {
 	{
 		
 	}
+	try
+	{
+		File input = new File("file");
+		File output = new File("file");
+		File expected = new File("file");
+		PrintWriter outin = new PrintWriter(input);
+		PrintWriter outout = new PrintWriter(expected);
+		Scanner in = new Scanner(input);
+		outin.println("it. here! it,");
+		outin.println("since there? then");
+		outin.println("");
+		outout.println("");
+		outout.println("then there? since");
+		outout.println("it, here! it.");
+		Reversal.reverseFile(input,output);
+		assertEquals("",output,expected);
+		outin.close();
+		outout.close();
+		in.close();
+	}
+	catch(FileNotFoundException e)
+	{
+		
+	}
 	}
 }

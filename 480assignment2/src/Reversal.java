@@ -14,9 +14,21 @@ public class Reversal {
 	
     public static void reverseFile(File input,File output)throws FileNotFoundException
     {
+    	if(!input.exists())
+    	{
+    		FileNotFoundException e = new FileNotFoundException("Input file is not here!");
+    		throw e;
+    	}
+    	if(!output.exists())
+    	{
+    		FileNotFoundException e = new FileNotFoundException("Output file is not here!");
+    		throw e;
+    	}
     	//line currently being reversed
     	String currentchunk;
+    	//next line being build
     	String linebuilding = "";
+    	//holds build line to put in the new file
     	ArrayList <String> lineholder = new ArrayList <String>();
     	try 
     	{
