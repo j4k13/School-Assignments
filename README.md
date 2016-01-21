@@ -1,2 +1,2 @@
-# A collection of my school assignments
+# A few of my school assignments
 
